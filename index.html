@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>S.H Website creator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <section id="banner">
+            <img src="images/logo2.jpeg" class="logo">
+            <div class="banner-text">
+                <h1>Site Studio</h1>
+                <p>Je crée votre site à votre image</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span> Find out </a>
+                    <a href="#"><span></span>Read more </a>
+                </div>
+            
+            </div>
+
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a> </li>
+                    <li><a href="#">Profil</a> </li>
+                    <li><a href="#">Experiences</a> </li>
+                    <li><a href="#">Formations</a> </li>
+                    <li><a href="#">Mes projets</a> </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+
+        </div>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNave.style.right = "0";
+                    menu.src = "images/close.png";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    menu.src = "images/menu.png";
+                }
+            }
+        </script>
+    </body>
+</html>
